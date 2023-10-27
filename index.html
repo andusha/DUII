@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="dropdown">
+            <div class="dropdown-button">
+                <p>menu</p>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item">1</div>
+                    <div class="dropdown-item">2</div>
+                    <div class="dropdown-item">3</div>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slides-container">
+                <div class="slide">
+                    <div class="text">1</div>
+                    <img src="images/clement-fusil-Fpqx6GGXfXs-unsplash.jpg" alt="" class="image">
+                </div>
+                <div class="slide invisible">
+                    <div class="text">2</div>
+                    <img src="images/johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt="" class="image">
+                </div>
+                <div class="slide invisible">
+                    <div class="text">3</div>
+                    <img src="images/roberto-nickson-vZ1JAXUO3-0-unsplash.jpg" alt="" class="image">
+                </div>
+                <div class="buttons">
+                    <div class="prev" onclick= slideTo(-1)>&#10094;</div>
+                    <div class="next" onclick= slideTo(1)>&#10095;</div>
+                </div>
+                <div class="bubbles">
+                    <div class="bubble" onclick=currentSlide(0) data-id = '0'></div>
+                    <div class="bubble" onclick=currentSlide(1) data-id = '1'></div>
+                    <div class="bubble" onclick=currentSlide(2) data-id = '2'></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
